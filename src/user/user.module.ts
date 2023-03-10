@@ -4,10 +4,6 @@ import { UserService } from './user.service';
 import { PrismaService } from '../prisma.service';
 
 @Module({
-  providers: [
-    UserResolver,
-    UserService,
-    PrismaService
-  ],
+  providers: [UserResolver, UserService, PrismaService],
 })
-export class UserModule { }
+export class UserModule {}

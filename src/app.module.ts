@@ -17,13 +17,11 @@ import { PrismaService } from './prisma.service';
           locations: error.locations,
           path: error.path,
         };
-      }
+      },
     }),
     UserModule,
     PostModule,
   ],
-  providers: [
-    PrismaService
-  ],
+  providers: [PrismaService],
 })
-export class AppModule { }
+export class AppModule {}

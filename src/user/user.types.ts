@@ -3,7 +3,7 @@ import { Field, InputType, ObjectType } from '@nestjs/graphql';
 @ObjectType('User')
 export class UserType {
   @Field(() => String, { nullable: false })
-  id: string
+  id: string;
 
   @Field()
   name: string;
@@ -24,10 +24,10 @@ export class CreateUserInput {
 @InputType('UsersWhereInput')
 export class UsersWhereInput {
   @Field()
-  skip?: number
+  skip?: number;
 
   @Field()
-  take?: number
+  take?: number;
 
   // @Field(() => Prisma.UserWhereUniqueInput, { nullable: true })
   // cursor?: Prisma.UserWhereUniqueInput
@@ -37,5 +37,4 @@ export class UsersWhereInput {
 
   // @Field()
   // orderBy?: Prisma.UserOrderByInput
-
 }
